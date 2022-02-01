@@ -8,19 +8,22 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
-  const value = useSelector((state) => state.home.value);
+  const { homeValue, headerValue } = useSelector((state) => ({
+    homeValue: state.home.value,
+    headerValue: state.header.value,
+  }));
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(HomeData());
-  }, [dispatch]);
-  console.log(value);
+    dispatch(HomeData(headerValue));
+  }, [dispatch, headerValue]);
+  console.log(homeValue);
 
   // subreddit_id;
 
   return (
     <div className="flex-left">
-      {value.map((post) => {
+      {homeValue.map((post) => {
         return (
           <div key={post.id} className="card">
             <h1>{post.title}</h1>

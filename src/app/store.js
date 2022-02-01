@@ -8,7 +8,7 @@ import workReformSlice from "../features/subreddits/workReformSlice";
 
 export const store = configureStore({
   reducer: {
-    searchTerm: headerReducer,
+    header: headerReducer,
     home: HomeReducer,
     memes: MemesReducer,
     pics: PicsReducer,
