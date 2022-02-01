@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 5px 1.5rem rgb(196, 191, 191);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-content: center;
+  padding: 1rem;
+  box-shadow: 0px 5px 1.5rem rgb(196, 191, 191);
+}
+
+.container .logo-icon {
+  font-size: 2rem;
+  color: blue;
+  margin: 0px 0.7rem 0px 1.5rem;
+}
+
+.container .logo {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  color: blue;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  margin-left: 8px;
+  padding: 10px;
+}
+
+input[type="text"] {
+  padding-left: 16px;
+}
+
+button {
+  width: 25px;
+  background-color: white;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 3px;
+  cursor: pointer;
+}

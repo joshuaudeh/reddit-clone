@@ -1,0 +1,104 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.flex-left {
+  width: 75%;
+  height: auto;
+  margin-left: 10px;
+}
+
+.flex-right {
+  width: 25%;
+  height: 50%;
+  margin-left: 10px;
+  box-shadow: 0px 5px 1.5rem rgb(196, 191, 191);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 5px 1.5rem rgb(196, 191, 191);
+  margin-bottom: 15px;
+  background-color: white;
+  height: auto;
+  padding: 0.75rem;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  padding: 1rem;
+  margin-left: 6rem;
+}
+
+.Bots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*typo*/
+
+h2,
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0.5rem;
+}
+.list-images {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: 5px;
+  border: 2px solid blue;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+  list-style: none;
+  padding: 0.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+ul li:hover {
+  background-color: #f0e9e9;
+  border-radius: 5px;
+}
+
+ul #active {
+  background-color: lightsteelblue;
+  color: blue;
+  border-left: 5px solid blue;
+  border-radius: 0px;
+}
+
+.images-result {
+  display: block;
+  width: 90%;
+  object-fit: cover;
+  margin: 0 0px 1.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+hr {
+  width: 85%;
+  margin-left: 5rem;
+  border-color: whitesmoke;
+}
